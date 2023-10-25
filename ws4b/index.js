@@ -14,10 +14,20 @@ window.onload = () =>{
 
 
     function comprobar(event){
+        var header = document.getElementById('header');
+        var nav = document.getElementById('newColor');
+        var nav2 = document.getElementById('facil');
+        var nav3 = document.getElementById('dificil');
         if (event.target.style.backgroundColor== solucion) {
             for (let i = 0; i < divs.length; i++) {
                 divs[i].style.backgroundColor= event.target.style.backgroundColor;
+                header.style.backgroundColor=event.target.style.backgroundColor;
+                document.getElementById('color').innerHTML='Enhorabuena, has ganado!';
+                nav.style.backgroundColor = event.target.style.backgroundColor;
+                nav2.style.backgroundColor = event.target.style.backgroundColor;
+                nav3.style.backgroundColor = event.target.style.backgroundColor;
             }
+            
         }
 
 
