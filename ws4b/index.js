@@ -5,7 +5,8 @@ window.onload = () =>{
     var divs = document.querySelectorAll('.div');
     for(let i = 0; i<divs.length; i++){
          divs[i].style.backgroundColor=generarColor();
-    }
+         divs[i].style.borderRadius='20px';
+        }
 
     numAleatorio0y6 = Math.floor(Math.random() * 6);
     divs[numAleatorio0y6].style.backgroundColor=solucion;

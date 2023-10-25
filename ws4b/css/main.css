@@ -1,3 +1,9 @@
+body{
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+
+}
 #div1,#div2,#div3,#div4,#div5,#div6{
     width: 100px;
     height: 100px;
@@ -6,8 +12,45 @@
     margin: 10px;
 }
 
-.body{
-    display: grid;
-
-    grid-template-columns: repeat(3,1fr);
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #178CA6;
+    color: white;
+    font-size: 1.3rem;
 }
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color:#178CA6 ;
+    text-decoration: none;
+}
+
+nav button{
+    margin: 10px;
+    background-color: #178CA6;
+    padding: 10px;
+    border-radius: 10px;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: fit-content;
+
+    
+}    
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
