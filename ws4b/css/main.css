@@ -1,0 +1,13 @@
+#div1,#div2,#div3,#div4,#div5,#div6{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.body{
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+}
